@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadarsha Parajuli | Links</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for monochromatic icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Playfair Display (Serif) & Montserrat (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        'vogue-black': '#0a0a0a',
+                        'vogue-white': '#fdfdfd',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #fdfdfd;
+            color: #0a0a0a;
+        }
+
+        /* Elegant fade-in animation */
+        .fade-in {
+            animation: fadeIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.5s; }
+        .delay-4 { animation-delay: 0.6s; }
+        .delay-5 { animation-delay: 0.7s; }
+        
+        /* Subtle noise texture for editorial feel (optional, kept very light) */
+        .texture-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.02;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased min-h-screen flex flex-col items-center py-12 px-5 sm:py-20 relative selection:bg-black selection:text-white">
+    
+    <div class="texture-overlay"></div>
+
+    <main class="w-full max-w-lg mx-auto flex flex-col items-center relative z-10">
+        
+        <!-- Editorial Profile Box -->
+        <div class="fade-in mb-8">
+            <div class="w-32 h-44 sm:w-40 sm:h-52 border border-vogue-black p-1 relative group overflow-hidden bg-white">
+                <img 
+                    src="profile.jpeg" 
+                    alt="Aadarsha Parajuli" 
+                    class="w-full h-full object-cover grayscale transition duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                >
+            </div>
+        </div>
+
+        <!-- Typography / Name -->
+        <div class="fade-in delay-1 text-center w-full mb-12">
+            <p class="text-[0.65rem] tracking-[0.4em] uppercase text-gray-500 mb-3 font-semibold">The Portfolio</p>
+            <h1 class="font-serif text-4xl sm:text-5xl font-black uppercase tracking-widest leading-tight">
+                Aadarsha<br>Parajuli
+            </h1>
+            <div class="w-12 h-[1px] bg-black mx-auto mt-6"></div>
+        </div>
+
+        <!-- Links Container -->
+        <div class="w-full flex flex-col gap-4">
+            
+            <!-- Link 1: Instagram -->
+            <div class="relative w-full fade-in delay-2">
+                <a href="https://www.instagram.com/aadarsha_000?stkn=NXB1Mnd4ejY3aWtj" target="_blank" rel="noopener noreferrer" 
+                   class="group block w-full border border-vogue-black bg-white py-4 px-6 text-vogue-black hover:bg-vogue-black hover:text-white transition-all duration-300 relative overflow-hidden">
+                    <div class="flex items-center justify-center w-full relative z-10">
+                        <i class="fa-brands fa-instagram absolute left-0 text-lg transition-transform duration-300 group-hover:scale-110"></i>
+                        <span class="uppercase tracking-[0.2em] text-xs font-semibold">Instagram</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Link 2: Snapchat -->
+            <div class="relative w-full fade-in delay-3">
+                <a href="https://www.snapchat.com/add/aadarsha_p2021" target="_blank" rel="noopener noreferrer" 
+                   class="group block w-full border border-vogue-black bg-white py-4 px-6 text-vogue-black hover:bg-vogue-black hover:text-white transition-all duration-300 relative overflow-hidden">
+                    <div class="flex items-center justify-center w-full relative z-10">
+                        <i class="fa-brands fa-snapchat absolute left-0 text-lg transition-transform duration-300 group-hover:scale-110"></i>
+                        <span class="uppercase tracking-[0.2em] text-xs font-semibold">Snapchat</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Link 3: WhatsApp -->
+            <div class="relative w-full fade-in delay-4">
+                <a href="https://wa.me/9779844336820" target="_blank" rel="noopener noreferrer" 
+                   class="group block w-full border border-vogue-black bg-white py-4 px-6 text-vogue-black hover:bg-vogue-black hover:text-white transition-all duration-300 relative overflow-hidden">
+                    <div class="flex items-center justify-center w-full relative z-10">
+                        <i class="fa-brands fa-whatsapp absolute left-0 text-lg transition-transform duration-300 group-hover:scale-110"></i>
+                        <span class="uppercase tracking-[0.2em] text-xs font-semibold">WhatsApp</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-16 fade-in delay-5 text-center">
+            <p class="text-[0.6rem] tracking-[0.3em] uppercase text-gray-400">
+                &copy; 2026 Aadarsha Parajuli
+            </p>
+        </footer>
+        
+    </main>
+</body>
+</html>
